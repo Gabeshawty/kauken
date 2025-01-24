@@ -2,16 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Grey Market</title>
 </head>
-<body>
 <style>
-    h1 {
-        text-align: center;
-    }
+    h1 {text-align: center;}
+    h2 {text-align: center;}
 </style>
+<body>
     <h1>Grey Market</h1>
     <h2>Butik</h2>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+    <div class="clearfix">
+        <div class="img-container">
+            <a href="Butik.html">
+            <img src="mjoool.png" alt="Premiummjöl direkt från Colombia" height="200" width="300">
+            </a>
+            <br>
+            <p>
+                <b>Premiummjöl direkt från Colombia</b>
+            </p>
+            <p>
+                <b>800kr/g</b>
+            </p>
+            <br>
+        </div>
+        <div class="img-container">
+            <a href="Butik.html">
+                <img src="peparkaksdeg.jpg" alt="Vår finaste pepparkaksdeg" height="200" width="300">
+            </a>
+            <br>
+            <p>
+                <b>Klibbig pepparkaksdeg från Afghanistan</b>
+            </p>
+            <p>
+                <b>500kr/5g</b>
+            </p>
+            <br>
+        </div>
+        <div class="img-container">
+            <a href="Butik.html">
+                <img src="peparkaksdeg.jpg" alt="Vår finaste pepparkaksdeg" height="200" width="300">
+            </a>
+            <br>
+            <p>
+                <b>Klibbig pepparkaksdeg från Afghanistan</b>
+            </p>
+            <p>
+                <b>500kr/5g</b>
+            </p>
+            <br>
+        </div>
+    </div>
 
 </body>
 </html>
