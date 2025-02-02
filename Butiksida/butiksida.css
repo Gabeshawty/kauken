@@ -8,14 +8,14 @@ body {
     height: 100%;
     width: 100%;
 }
-
+/* border samt border hover färg */
 img {
     border: 5px solid hotpink;
 }
 img:hover {
     border-color: greenyellow;
 }
-
+/* Header grejer */
 header {
     background-color: #333;
     color: #ffffff;
@@ -29,10 +29,11 @@ header img {
     height: 50px;
     margin-right: 10px;
 }
-
+/* tar bort bordern på loggan högst upp på sidan */
 .headbild img {
     border: none;
 }
+/* ska jag vara ärlig vet jag inte ens om den här fungerar men den får va här ändå, den e för google maps */
 .google-map {
     padding-bottom: 50%;
     position: relative;
