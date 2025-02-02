@@ -1,292 +1,101 @@
-* { /* väljer alla sektioner i hela dokumentet */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrollbars */
-    background: #ffffff; /* Dark background for maximum effect */
-}
-
-/* container som nämnd i html dokumentet */
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-/* header */
-header {
-    background-color: #333;
-    color: #ffffff;
+    background: #efefef;
+    color: #333;
     text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
     padding: 20px;
-    width: 100%;
     position: relative;
-    overflow: hidden; /* Contain the chaos */
-    perspective: 1000px; /* Enable 3D transformations */
-    z-index: 1; /* Ensure header stays above other content */
 }
 
-header img,
-header h1 {
-    display: inline-block; /* Ensure they align horizontally */
-    animation:
-            spin 0.3s linear infinite, /* Super fast spin */
-            bounce 0.2s ease-in-out infinite, /* Rapid bouncing */
-            shake 0.05s linear infinite, /* Insane shaking */
-            colorChange 0.5s linear infinite, /* Rapid color changes */
-            scale 0.2s ease-in-out infinite, /* Scaling up and down */
-            glitch 0.1s linear infinite, /* Glitch effect */
-            flash 0.1s linear infinite, /* Rapid flashing */
-            skew 0.3s linear infinite, /* Skew effect */
-            orbit 2s linear infinite, /* Orbit around the header */
-            explode 1s linear infinite, /* Explosive 3D effect */
-            distort 0.5s linear infinite; /* Chaotic distortion */
-}
-
-header img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 20px #00ffff); /* Neon glow */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff, 0 0 40px #00ffff; /* Ultra neon glow */
-}
-
-/* navigations baren */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    width: 100%;
-    padding: 10px 0;
-    position: relative;
-    z-index: 2; /* Ensure nav stays above header */
+    background: #444;
+    padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
-/* detta är för alla <a> taggar inom navbaren */
 nav a {
     color: white;
-    padding: 15px 35px;
     text-decoration: none;
-    text-align: center;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 nav a:hover {
-    background-color: #4a4949;
+    background: #555;
+    border-radius: 5px;
 }
 
-/* välkomstsidan */
+
 .upp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: white;
     padding: 20px;
-    background-color: #bbb;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    z-index: 2; /* Ensure content stays above header */
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* detta är knappen */
 .upp a {
-    color: #ffffff;
-    background-color: #000000;
+    display: inline-block;
+    background: #919191;
+    color: white;
     padding: 10px 15px;
     text-decoration: none;
-    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .upp a:hover {
-    background-color: #555;
+    background: #000000;
 }
 
-/* produktsida */
+
 .produkter {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 2; /* Ensure content stays above header */
+    padding: 20px;
 }
 
 .produkt {
-    background-color: white;
-    padding: 5px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
 }
 
 .produkt img {
     width: 100%;
-    height: auto;
+    border-radius: 5px;
 }
 
 .produkt a {
-    display: inline-block;
+    display: block;
+    color: #ff0000;
     margin-top: 10px;
-    color: #333;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .produkt a:hover {
     text-decoration: underline;
 }
 
-/* footern */
+/* fuuuter */
 footer {
-    background-color: #515151;
+    background: #333;
     color: white;
-    text-align: center;
     padding: 20px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    z-index: 2; /* Ensure footer stays above header */
+    margin-top: 20px;
 }
-
-/* ULTRA MEGA CRACKED-OUT ECSTACIZED METH DIMENSION ANIMATIONS */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-50px);
-    }
-}
-
-@keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-20px);
-    }
-    50% {
-        transform: translateX(20px);
-    }
-    75% {
-        transform: translateX(-20px);
-    }
-}
-
-@keyframes colorChange {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-@keyframes scale {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(2);
-    }
-}
-
-@keyframes glitch {
-    0%, 100% {
-        clip-path: inset(0 0 0 0);
-    }
-    25% {
-        clip-path: inset(20px 0 0 0);
-    }
-    50% {
-        clip-path: inset(0 0 20px 0);
-    }
-    75% {
-        clip-path: inset(0 20px 0 0);
-    }
-}
-
-@keyframes flash {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
-@keyframes skew {
-    0%, 100% {
-        transform: skew(0deg);
-    }
-    50% {
-        transform: skew(45deg);
-    }
-}
-
-@keyframes orbit {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
-    25% {
-        transform: translateX(100px) translateY(-50px);
-    }
-    50% {
-        transform: translateX(0) translateY(-100px);
-    }
-    75% {
-        transform: translateX(-100px) translateY(-50px);
-    }
-    100% {
-        transform: translateX(0) translateY(0);
-    }
-}
-
-@keyframes explode {
-    0%, 100% {
-        transform: translateZ(0) rotateX(0) rotateY(0);
-    }
-    50% {
-        transform: translateZ(100px) rotateX(360deg) rotateY(360deg);
-    }
-}
-
-@keyframes distort {
-    0%, 100% {
-        transform: skew(0deg) scale(1);
-    }
-    25% {
-        transform: skew(45deg) scale(1.5);
-    }
-    50% {
-        transform: skew(-45deg) scale(0.5);
-    }
-    75% {
-        transform: skew(90deg) scale(2);
-    }
-}
+/* Använt mig av w3schools, codecademy samt samt reddit för hjälp med css koden*/
