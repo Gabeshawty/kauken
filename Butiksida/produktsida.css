@@ -1,12 +1,30 @@
 * { /* väljer alla sektioner i hela dokumentet */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #333;
+    color: #333;
+    text-align: center;
+}
+nav { /* FIXADE UPP NAV BAREN */
+    background: #444;
+    padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
-body {
-    height: 100%;
-    width: 100%;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #555;
+    border-radius: 5px;
 }
 main {
     display: flex;
