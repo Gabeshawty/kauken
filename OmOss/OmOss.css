@@ -94,7 +94,9 @@ header img {
     font-size: 25px; /*Stor text storlek då vi inte åldersdiskriminerar och vill att äldre och synnedsatta personer ska kunna läsa*/
     padding-bottom: 1px; /* Ger mig utrymme innan footer */
 }
-
+.skapare{
+    text-align: center;
+}
 .footer {
 
     background-color: #333;
