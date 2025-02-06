@@ -8,6 +8,11 @@ body {
     height: 100%;
     width: 100%;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Header och sånt */
 header {
     background-color: #333;
@@ -24,7 +29,7 @@ header img {
 }
 /* Polaroid grejen, tog hjälp av w3schools för att förstå koden */
 div.polaroid {
-    width: 90%;
+    width: 95%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
