@@ -4,10 +4,11 @@
     text-align: center;
 }
 .Allt{
+    text-align: center;
 
-    padding-left: 30%;
 }
 .Uppgifter{
-    padding-bottom: 20%;
+    padding-left: 30%;
+    padding-bottom: 5%;
     text-align: left;
 }
