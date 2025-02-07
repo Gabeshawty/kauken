@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="flexilogga">
-    <img src="flexilogga.png" alt="Logga" height="75%" width="75%"/>
+    <img src="flexilogga.png" alt="Logga" height="750" width="750"/>
 </div>
 <div class="Header">
     <h1>Kontakta FlexiSupport</h1>
@@ -32,10 +32,10 @@
             Ange kön
             </label>
             <input type="checkbox" id="checkbox"/>
-            <label for="select">
+            <label for="option1">
             Vilken produkt vill du kontakta oss angående?
             </label>
-            <select id="select">
+            <select id="option1">
                 <option>Flexilex</option>
                 <option>Kontakta oss</option>
                 <option>Gabriel</option>
@@ -46,30 +46,36 @@
             Ange förnamn och efternamn
             </label>
             <input type="text" placeholder="Namn" id="namn2"/>
-            <label>
+            <label for="radio1">
             Är du övervakad?
             Ja / Nej
-            <input type="radio" name="Värde1">
-            <input type="radio" name="Värde1">
+            <input type="radio" name="Värde1" id="radio1"/>
             </label>
-            <label>
+            <label for="radio2">
+            <input type="radio" name="Värde1" id="radio2"/>
+            </label>
+            <label for="radio3">
             Har 3 identiska bilar kör förbi dig inom det senaste 6 minuterna?
             Ja / Nej
-            <input type="radio" name="Värde2">
-            <input type="radio" name="Värde2">
+            <input type="radio" name="Värde2" id="radio3">
             </label>
-            <label>
+            <label for="radio4">
+            <input type="radio" name="Värde2" id="radio4">
+            </label>
+            <label for="radio5">
             Är du flexibel?
             Ja / Nej
-            <input type="radio" name="Värde3">
-            <input type="radio" name="Värde3">
+            <input type="radio" name="Värde3" id="radio5">
             </label>
-            <label>
+            <label for="radio6">
+            <input type="radio" name="Värde3" id="radio6">
+            </label>
+            <label for="textarea">
             Ange ditt ärende här!
-            <textarea rows="25" cols="75"></textarea>
+            </label>
+            <textarea rows="25" cols="75" id="textarea"></textarea>
             <button type="submit">Skicka</button>
             <button type="reset">Töm fält</button>
-            </label>
         </div>
     <div class="Tack">
         <p>Tack för att du vågade kontakta oss!</p>
