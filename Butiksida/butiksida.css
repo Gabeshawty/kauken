@@ -10,6 +10,7 @@ body {
 }
 
 nav { /* FIXADE UPP NAV BAREN */
+    display: flex;
     background: #444;
     padding: 10px;
     position: sticky;
