@@ -15,104 +15,58 @@
 <form>
     <div class="Allt">
 
-        <div class="Uppgifter">
-            <label>
+        <div class="Uppgifter"> <!-- OBS FÅR EJ HA BREAKS HÄR, HUR SKA VI LÖSA DETTA PROBLEM?-->
+            <label for="namn">
                 Ange förnamn och efternamn
-                <br>
-                <br>
-            <input type="text" placeholder="Namn">
             </label>
-            <label>
-                <br>
-                <br>
+            <input type="text" placeholder="Namn" id="namn"/>
+            <label for="nummer">
             Ange telefonnummer, inklusive landskod
-                <br>
-                <br>
-            <input type="number" placeholder="Telefonnummer">
             </label>
-            <label>
-                <br>
-                <br>
+            <input type="number" placeholder="Telefonnummer" id="nummer"/>
+            <label for="email">
             Ange e-post, allting funkar förutom g-mail
-                <br>
-                <br>
-            <input type="email" placeholder="E-mail">
             </label>
-            <label>
-                <br>
-                <br>
+            <input type="email" placeholder="E-mail" id="email"/>
+            <label for="checkbox">
             Ange kön
-                <br>
-                <br>
-            <input type="checkbox" placeholder="Kön">
             </label>
-            <label>
-                <br>
-                <br>
+            <input type="checkbox" id="checkbox"/>
+            <label for="select">
             Vilken produkt vill du kontakta oss angående?
-                <br>
-                <br>
-            <select>
+            </label>
+            <select id="select">
                 <option>Flexilex</option>
                 <option>Kontakta oss</option>
                 <option>Gabriel</option>
                 <option>LexAdapt</option>
                 <option>JuriFlex</option>
                 </select>
-                </label>
-            <label>
-                <br>
-                <br>
+            <label for="namn2">
             Ange förnamn och efternamn
-                <br>
-                <br>
-            <input type="text" placeholder="Namn">
             </label>
+            <input type="text" placeholder="Namn" id="namn2"/>
             <label>
-                <br>
-                <br>
             Är du övervakad?
-                <br>
-                <br>
             Ja / Nej
-                <br>
-                <br>
             <input type="radio" name="Värde1">
             <input type="radio" name="Värde1">
             </label>
             <label>
-                <br>
-                <br>
-            Har 3 identiska bilar kör förbi dig inom det senaste 6 minuterna
-                <br>
-                <br>
+            Har 3 identiska bilar kör förbi dig inom det senaste 6 minuterna?
             Ja / Nej
-                <br>
-                <br>
             <input type="radio" name="Värde2">
             <input type="radio" name="Värde2">
             </label>
             <label>
-                <br>
-                <br>
             Är du flexibel?
-                <br>
-                <br>
             Ja / Nej
-                <br>
-                <br>
             <input type="radio" name="Värde3">
             <input type="radio" name="Värde3">
             </label>
             <label>
-                <br>
-                <br>
             Ange ditt ärende här!
-                <br>
-                <br>
             <textarea rows="25" cols="75"></textarea>
-                <br>
-                <br>
             <button type="submit">Skicka</button>
             <button type="reset">Töm fält</button>
             </label>
