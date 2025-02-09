@@ -1,4 +1,4 @@
-/* Grundläggande styling för deep-web estetik */
+/*använt youtube tutorials etc för hjälp med de svårare delar av koden*/
 body {
     background-color: #0a0a0a;
     color: #0fff0f;
@@ -52,7 +52,7 @@ body {
 .product-description {
     max-width: 400px;
 }
-/* Prisbehållare för att placera pris och Köp nu-knapp sida vid sida */
+
 .price-container {
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Köp nu-knapp */
+
 .buy-now-button {
     padding: 5px 15px;
     background: #00ff00;
@@ -88,7 +88,7 @@ body {
     50% { opacity: 1; }
 }
 
-/* Styling för distorderad text */
+
 .distorted-text {
     font-style: italic;
     animation: distort 2s infinite;
@@ -100,7 +100,7 @@ body {
     100% { transform: scale(1) skew(0deg); }
 }
 
-/* Dropdown-menyer */
+
 select {
     background-color: black;
     color: #00ff00;
@@ -114,7 +114,7 @@ select:hover {
     color: black;
 }
 
-/* Checkbox-animationer */
+
 input[type="checkbox"] {
     transform: scale(1.2);
     accent-color: red;
@@ -150,7 +150,7 @@ input[type="checkbox"]:checked {
     box-shadow: 0 0 10px red;
 }
 
-/* Gömda menyer – använd gärna en JavaScript-funktion för att toggla .active */
+
 .hidden-menu {
     display: none;
     background: rgba(255, 0, 0, 0.1);
@@ -183,7 +183,7 @@ input[type="checkbox"]:checked {
     100% { opacity: 1; }
 }
 
-/* Varnings- och meddelandetexter */
+
 .warning {
     color: red;
     font-weight: bold;
@@ -196,7 +196,7 @@ input[type="checkbox"]:checked {
     50% { opacity: 0.3; }
 }
 
-/* Nya sektioner för paranoia och övervakning */
+
 .paranoia-text {
     margin: 30px 0;
     text-align: center;

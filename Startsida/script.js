@@ -1,36 +1,27 @@
-// ================================
-// Ultimate "DarkWeb-Paranoia" JavaScript
-// ================================
 
+/* Använt youtube tutorials för allt i detta dokument, gjort enbart för skoj*/
 
-// Hämta viktiga element
 const joinUsButton = document.querySelector('.join-us-button');
 const hiddenMenu = document.querySelector('.hidden-menu');
 
-// Vid klick på "Stig in – du har inget val"-knappen
+
 joinUsButton.addEventListener('click', () => {
-    // Visa den dolda menyn med en extra glitch-effekt
+
     hiddenMenu.style.display = 'block';
     hiddenMenu.classList.add('active');
 
-    // Ändra bakgrundsfärg med en hotfull röd nyans
+
     document.body.style.transition = "background-color 0.5s, transform 0.1s";
     document.body.style.backgroundColor = "#330000"; // mörk röd
     setTimeout(() => {
         document.body.style.backgroundColor = "#0a0a0a";
     }, 500);
 
-    // Spela ett kusligt ljud (se till att filen finns)
-    const eerieSound = new Audio('eerie-sound.mp3');
-    eerieSound.play().catch(e => console.warn("Ljudspelning blockerades:", e));
-
     // Skriv en hotfull varning i konsolen
     console.warn("Du är utvald. De ser allt. Ingen flykt finns.");
 });
 
-// ================================
-// Tracking Dot – En röd prick som följer muspekaren (konstant övervakning)
-// ================================
+
 document.addEventListener('mousemove', (event) => {
     let trackingDot = document.getElementById('tracking-dot');
     if (!trackingDot) {
@@ -50,9 +41,7 @@ document.addEventListener('mousemove', (event) => {
     trackingDot.style.top = (event.pageY + 10) + 'px';
 });
 
-// ================================
-// Glitch-effekt på texten – slumpmässigt förvrängd text
-// ================================
+
 function glitchText(selector) {
     const elements = document.querySelectorAll(selector);
     elements.forEach(el => {
@@ -78,9 +67,7 @@ function glitchText(selector) {
 glitchText('.distorted-text');
 glitchText('.whispering-text');
 
-// ================================
-// Slumpmässigt overlay med hotfulla meddelanden
-// ================================
+
 function randomOverlay() {
     const overlay = document.createElement('div');
     overlay.style.position = 'fixed';
@@ -96,7 +83,7 @@ function randomOverlay() {
     overlay.style.fontSize = '2.5em';
     overlay.style.zIndex = 11000;
 
-    // Meddelanden inspirerade av paranoid schizofreni och darkweb-tema
+
     const messages = [
         "De är inne i ditt huvud...",
         "Du kan inte fly. Du är deras lek.",
@@ -112,21 +99,17 @@ function randomOverlay() {
         setTimeout(() => { overlay.remove(); }, 1000);
     }, 2500);
 }
-// Visa overlay var 12:e sekund
+
 setInterval(randomOverlay, 12000);
 
-// ================================
-// Hotfulla meddelanden vid ändring av kryssrutor
-// ================================
+
 document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
     checkbox.addEventListener('change', () => {
         console.warn("Vi har noterat varje detalj. Du är vårt mål.");
     });
 });
 
-// ================================
-// Slumpmässig flicker-effekt på viktiga element (bilder, rubriker, underrubriker)
-// ================================
+
 function randomFlicker() {
     const elements = document.querySelectorAll('.image-frame img, .header h1, .subtitle');
     elements.forEach(el => {
@@ -141,17 +124,13 @@ function randomFlicker() {
 }
 setInterval(randomFlicker, 2500);
 
-// ================================
-// Parallax-effekt vid scroll – bakgrunden rör sig med en annan hastighet
-// ================================
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     document.body.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
 });
 
-// ================================
-// Dynamisk titel – ändrar sig slumpmässigt för att skapa en osäker känsla
-// ================================
+
 function randomizeTitle() {
     const titles = [
         "De ser allt...",
@@ -164,9 +143,7 @@ function randomizeTitle() {
 }
 setInterval(randomizeTitle, 10000);
 
-// ================================
-// Extra: Skaka sidan (simulerar panik och förlust av kontroll)
-// ================================
+
 function shakePage() {
     document.body.style.transition = 'transform 0.1s';
     document.body.style.transform = `translate(${(Math.random() - 0.5) * 15}px, ${(Math.random() - 0.5) * 15}px)`;
@@ -176,9 +153,7 @@ function shakePage() {
 }
 setInterval(shakePage, 4000);
 
-// ================================
-// Extra: "Ghost messages" – hotfulla meddelanden som dyker upp slumpmässigt
-// ================================
+
 function ghostMessage() {
     const messages = [
         "De är redan inne i ditt huvud...",
@@ -203,7 +178,7 @@ function ghostMessage() {
     ghostDiv.style.opacity = '0';
     ghostDiv.style.transition = 'opacity 0.5s, transform 0.5s';
     document.body.appendChild(ghostDiv);
-    // Fade in
+
     setTimeout(() => {
         ghostDiv.style.opacity = '1';
         ghostDiv.style.transform = 'scale(1.1)';
@@ -219,9 +194,7 @@ function ghostMessage() {
 }
 setInterval(ghostMessage, 7000);
 
-// ================================
-// Idle detection: Om användaren är inaktiv i 10 sekunder, visas ett overlay
-// ================================
+
 let lastInteractionTime = Date.now();
 ['mousemove', 'keydown', 'click'].forEach(eventName => {
     document.addEventListener(eventName, () => {
@@ -260,17 +233,4 @@ function checkIdle() {
 }
 setInterval(checkIdle, 1000);
 
-// ================================
-// Extra: Slumpmässigt spelade kusliga ljudklipp (inspirerade av darkweb)
-// ================================
-function playRandomSound() {
-    const sounds = ['eerie1.mp3', 'eerie2.mp3', 'eerie3.mp3'];
-    const sound = new Audio(sounds[Math.floor(Math.random() * sounds.length)]);
-    sound.volume = 0.3;
-    sound.play().catch(e => console.warn("Ljudfel:", e));
-}
-setInterval(() => {
-    if (Math.random() < 0.35) { // 35% chans var 10:e sekund
-        playRandomSound();
-    }
-}, 10000);
+
